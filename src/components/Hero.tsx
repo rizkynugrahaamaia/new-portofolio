@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-indigo-600">Yoan Hazalea</span>
+              Hi, I'm <span className="text-indigo-600">Rizky Nugraha Amaia</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-gray-700 mb-6">
               Frontend Developer
@@ -19,7 +19,7 @@ const Hero = () => {
             </p>
             <div className="flex space-x-4 mb-8">
               <a 
-                href="https://github.com" 
+                href="https://github.com/rizkynugrahaamaia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
@@ -28,7 +28,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/rizkyna2703/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
@@ -36,8 +36,15 @@ const Hero = () => {
               >
                 <Linkedin size={24} />
               </a>
+              {/* <a 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kikiamaia1994@gmail.com" 
+                className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
+                aria-label="Email"
+              > */}
               <a 
-                href="mailto:your.email@example.com" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kikiamaia1994@gmail.com" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
                 aria-label="Email"
               >
@@ -62,7 +69,7 @@ const Hero = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-indigo-600">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
+                src="/myprofile.png" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />

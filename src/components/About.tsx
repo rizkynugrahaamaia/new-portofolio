@@ -32,15 +32,15 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <div>
                 <h4 className="font-semibold mb-2">Name:</h4>
-                <p className="text-gray-700">Your Name</p>
+                <p className="text-gray-700">Rizky Nugraha Amaia</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Email:</h4>
-                <p className="text-gray-700">your.email@example.com</p>
+                <p className="text-gray-700">kikiamaia1994@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Location:</h4>
-                <p className="text-gray-700">City, Country</p>
+                <p className="text-gray-700">Makassar, Indonesia</p>
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Availability:</h4>

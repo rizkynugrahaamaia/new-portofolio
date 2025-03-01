@@ -103,7 +103,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-gray-700 mb-2">
-                      Your Namex
+                      Your Name
                     </label>
                     <input
                       type="text"
