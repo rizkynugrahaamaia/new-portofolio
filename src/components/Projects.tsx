@@ -6,8 +6,8 @@ const Projects = () => {
       id: 1,
       title: 'Konas Dashboard',
       description: 'KONAS is a digital platform for participant registration, attendance scanning, and real-time monitoring, suitable for formal and non-formal events, ensuring efficient and organized management.',
-      image: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-      technologies: ['ReactJS', 'TailwindCSS', 'Express', 'Sequelize'],
+      image: '/new-portofolio/konas.png',
+      technologies: ['ReactJS', 'React Query', 'TailwindCSS', 'Express', 'Sequelize'],
       liveLink: 'https://konas-web.vercel.app/login',
       githubLink: 'https://github.com/rizkynugrahaamaia/konas-web',
     },
@@ -15,19 +15,19 @@ const Projects = () => {
       id: 2,
       title: 'Cahaya Timur Ototama',
       description: 'This official portfolio website introduces Cahaya Timur Ototama, showcasing its services, company profile, and contact details, offering a professional and informative overview.',
-      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
-      technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+      image: '/new-portofolio/cto.png',
+      technologies: ['NextJS', 'TypeScript', 'MaterialUI'],
       liveLink: 'https://cahaya-timur.vercel.app/',
       githubLink: 'https://github.com/rizkynugrahaamaia/cahaya-timur',
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A weather application that provides real-time weather data and forecasts for locations worldwide. Features include interactive maps, hourly forecasts, and weather alerts.',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-      technologies: ['React', 'Redux', 'OpenWeather API', 'Chart.js'],
-      liveLink: 'https://example.com',
-      githubLink: 'https://github.com',
+      title: 'Product Showcase',
+      description: 'This portfolio website showcases a products unique identity, highlighting its features, benefits, and visual appeal to attract and engage potential customers effectively.',
+      image: '/new-portofolio/korea-porto.png',
+      technologies: ['NextJS', 'TypeScript', 'TailwindCSS'],
+      liveLink: 'https://korea-portofolio.vercel.app/',
+      githubLink: 'https://github.com/rizkynugrahaamaia/korea-portofolio',
     },
   ];
 
@@ -89,7 +89,7 @@ const Projects = () => {
         
         <div className="text-center mt-12">
           <a 
-            href="https://github.com" 
+            href="https://github.com/rizkynugrahaamaia?tab=repositories" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors inline-block"

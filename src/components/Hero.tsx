@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
@@ -36,13 +35,8 @@ const Hero = () => {
               >
                 <Linkedin size={24} />
               </a>
-              {/* <a 
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=kikiamaia1994@gmail.com" 
-                className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
-                aria-label="Email"
-              > */}
               <a 
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=kikiamaia1994@gmail.com" 
+                href="mailto:kikiamaia1994@gmail.com" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
@@ -69,7 +63,7 @@ const Hero = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-indigo-600">
               <img 
-                src="/myprofile.png" 
+                src="/new-portofolio/myprofile.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />

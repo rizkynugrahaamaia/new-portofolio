@@ -5,9 +5,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Mail size={20} />, url: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: <Github size={20} />, url: 'https://github.com/rizkynugrahaamaia', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/rizkyna2703/', label: 'LinkedIn' },
+    { icon: <Mail size={20} />, url: 'mailto:kikiamaia1994@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">
-            &copy; {currentYear} Your Name. All rights reserved.
+            &copy; {currentYear} Rizky Nugraha Amaia. All rights reserved.
           </p>
           
           <nav className="mt-4 md:mt-0">

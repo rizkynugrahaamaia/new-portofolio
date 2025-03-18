@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import emailjs from '@emailjs/browser'; // Import EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,40 +18,58 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_jo9a9pd', // Replace with your EmailJS Service ID
+        'template_mvrlf3h', // Replace with your EmailJS Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        '7-kfrRkGqhN2ybXou' // Replace with your EmailJS Public Key
+      );
+
+      // Success message
       setSubmitMessage('Thank you! Your message has been sent successfully.');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Clear success message after 5 seconds
+    } catch (error) {
+      // Error message
+      console.error('Error:', error); // Log the error for debugging
+      setSubmitMessage('Oops! Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+
+      // Clear success/error message after 5 seconds
       setTimeout(() => {
         setSubmitMessage('');
       }, 5000);
-    }, 1500);
+    }
   };
 
   const contactInfo = [
     {
       icon: <Mail size={24} className="text-indigo-600" />,
       title: 'Email',
-      content: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      content: 'kikiamaia1994@gmail.com',
+      link: 'mailto:kikiamaia1994@gmail.com',
     },
     {
       icon: <Phone size={24} className="text-indigo-600" />,
       title: 'Phone',
-      content: '+1 (123) 456-7890',
-      link: 'tel:+11234567890',
+      content: '085242558379',
+      link: 'tel:+6285242558379',
     },
     {
       icon: <MapPin size={24} className="text-indigo-600" />,
       title: 'Location',
-      content: 'City, Country',
+      content: 'Makassar, Indonesia',
       link: null,
     },
   ];
@@ -94,7 +113,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
               
               {submitMessage && (
-                <div className="mb-6 p-4 bg-green-100 text-green-700 rounded-lg">
+                <div className={`mb-6 p-4 rounded-lg ${submitMessage.includes('Thank you') ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                   {submitMessage}
                 </div>
               )}

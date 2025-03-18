@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -44,12 +42,12 @@ const About = () => {
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Availability:</h4>
-                <p className="text-gray-700">Available for freelance</p>
+                <p className="text-gray-700">Open to Flexible Work Arrangements (Freelance, Onsite, or Remote)</p>
               </div>
             </div>
             
             <a 
-              href="#" 
+              href="/new-portofolio/professional-cv.pdf" 
               className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors inline-block"
             >
               Download Resume
